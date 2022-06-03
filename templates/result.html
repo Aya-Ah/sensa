@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>RESULT</title>
+
+</head>
+<body>
+    <section class="result-page">
+        <div class="header">
+            <div class="navbar"> 
+                <div class="btn-toggle" onclick="toggleNav()"> <img src="../static/imgs/Group 411bar.svg" alt=""> </div>
+                <img src="../static/imgs/sensalogo.svg" alt="sen-sa" class="logo">
+            </div>
+            <ul class="navUl">
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#contact">Contacts</a> </li>
+            </ul>
+        </div>
+        <div class="result-content">
+            <h1>Result Of Analysing</h1>
+            <p class="result">This text is <span>{{mainc}}</span> and it's express <span>{{cls}}</span></p>
+            <div class="input">
+                <p>{{input}}</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let toggleNavStatus = false;
+
+        function toggleNav() {
+            let gitNavUl= document.querySelector('.navUl')
+
+            if (toggleNavStatus == false){
+                gitNavUl.style.display= "block ";
+                toggleNavStatus=true;
+            }
+            
+            else if (toggleNavStatus == true) {
+                gitNavUl.style.display="none";
+                toggleNavStatus=false;
+            }
+        } 
+    </script>
+    <!--
+    <p> {{input}}</p>
+    <h2> This is about <span>{{cls}}</span></h2>
+    {% if cls=="sadness":%}
+    <h3>show it if classe is sad</h3>
+    {% endif%}
+    -->
+
+</body>
+</html>

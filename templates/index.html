@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>sen-sa</title>
+    
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="header">
+            <div class="navbar"> 
+                <div class="btn-toggle" onclick="toggleNav()"> <img src="../static/imgs/Group 411bar.svg" alt=""> </div>
+                <img src="../static/imgs/sensalogo.svg" alt="sen-sa" class="logo">
+            </div>
+            <ul class="navUl">
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#contact">Contacts</a> </li>
+            </ul>
+        </div>
+        <div class="home-txt">
+            <h1>Welcome to</h1>
+            <img src="../static/imgs/sensalogo60px.svg" alt="sen-sa" >
+            <p>Senas is  free sentiment analysis tool is based on the most recent machine learning algorithms. </p>
+            <div class="home-btn">
+                <a href="#start" class="btn primary">Started now</a>
+                <a href="#about" class="btn">Learn more</a>
+            </div>
+        </div>
+        <img src="../static/imgs/Group 47homeXXS.svg" alt="" class="home-img">   
+    </section>
+
+    <section class="start container" id="start">
+        <h2>Start Analysing</h2>
+        <p>Type here what you need to analysis and you will get your result in sec .. sensa will predict if the text is positive or negative or neutral furthermore it can detect the emotion behind this text.</p>
+        <form method="post" action="result">
+            <textarea name="txt" id="" cols="20" rows="8" required placeholder="Type..."></textarea>
+            <div class="categories">
+                <div>*classification categories :</div>
+                <div class="spans">
+                    <span >joy</span>
+                    <span>anger</span>
+                    <span>love</span>
+                    <span>sadness</span>
+                    <span>fear</span>
+                    <span>surprise</span>
+                </div>
+            </div>
+            <div class="submit">
+                <lord-icon class="ico"
+                    src="https://cdn.lordicon.com/xulniijg.json"
+                    trigger="loop"
+                    delay="500"
+                    colors="primary:#ffffff"
+                    style="width:30px;height:30px">
+                </lord-icon>
+                <input type="submit" value="Analysis">
+            </div>
+        </form>
+    </section>
+        
+    <section class="about container" id="about">
+        <div class="what">
+            <img src="../static/imgs/Capa_4whatSensa.svg" alt="">
+            <div class="what-txt">
+                <h2>What is <img src="../static/imgs/sensalogo.svg" alt="sen-sa" > ?</h2>
+                <p>free tool will allow you to sentiment analysis and emotion detection on virtually any text written in English .</p>
+                <p>This tool is based on the most recent machine learning algorithms. Thanks to that we can analyze sentiment and understand the word context  with human-like accuracy!</p>
+            </div>
+        </div>
+
+        <div class="why">
+            <h2>Why is <img src="../static/imgs/sensalogo.svg" alt="sen-sa" > ?</h2>
+            <div class="items">
+                <div class="item">
+                    <div class="ico">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/etwtznjn.json"
+                            trigger="loop"
+                            delay="1000"
+                            colors="primary:#00b4d8,secondary:#ff6d00"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                    </div>
+                    <span>Fast</span>
+                    <p>get your result in sec by just clik 'analysis'</p>
+                </div>
+    
+                <div class="item">
+                    <div class="ico">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/cmrzxpzz.json"
+                            trigger="loop"
+                            delay="1000"
+                            colors="primary:#00b4d8,secondary:#ff6d00"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                    </div>
+                    <span>Free</span>
+                    <p>sensa 100% free you can use it whenever u need it </p>
+                </div>
+    
+                <div class="item">
+                    <div class="ico">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/pijqcxrg.json"
+                            trigger="loop"
+                            delay="1000"
+                            colors="primary:#00b4d8,secondary:#ff6d00"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                    </div>
+                    <span>Accurate</span>
+                    <p>it’s use Ai to understand the word context  with human-like accuracy!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question , comment , suggestion , or just want to get in touch ? We'd love to hear from you . Fill out the form below and someone will get back to you asap .</p>
+        <form action="https://formspree.io/f/mwkyydrg" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="mail" placeholder="Email Address">
+            <textarea name="msg" id="" cols="20" rows="8" placeholder="Message"></textarea>
+            <div class="submit">
+                <lord-icon
+                    src="https://cdn.lordicon.com/rhvddzym.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:43px;height:43px">
+                </lord-icon>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script>
+        let toggleNavStatus = false;
+
+        function toggleNav() {
+            let gitNavUl= document.querySelector('.navUl')
+
+            if (toggleNavStatus == false){
+                gitNavUl.style.display= "block ";
+                toggleNavStatus=true;
+            }
+            
+            else if (toggleNavStatus == true) {
+                gitNavUl.style.display="none";
+                toggleNavStatus=false;
+            }
+        } 
+    </script>
+</body>
+</html>
