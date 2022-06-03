@@ -56,3 +56,6 @@ if __name__ == '__main__':
     app.debug = True
     app.run() #go to http://localhost:5000/ to view the page.
 
+
+import streamlit as st
+st.stop()
