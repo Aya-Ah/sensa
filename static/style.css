@@ -133,35 +133,11 @@ textarea::placeholder {
     opacity: 1;
 }
 
-.categories {
-    width: 100%;
-    margin: 6px 0 0 20px;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-}
-
-.spans{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-}
-
-.categories span {
-    color: #023E8A;
-    font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #023E8A ;
-    border-radius: 25px;
-    padding: 3px 6px;
-}
-
 .submit {
     background-color:#00B4D8;
-    margin: 40px 0 0 20px;
+    margin: 15px 0 0 20px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 7px;
     display: flex;
     justify-content: center;
 }
@@ -375,6 +351,11 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+    .navbar img {
+        margin-top: 3px;
+    }
+
     .btn-toggle {
         display: inline;
     }
