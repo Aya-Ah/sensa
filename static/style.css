@@ -47,6 +47,10 @@ section {
     justify-content: space-between;
 }
 
+.navbar img {
+    margin-top: 20%;
+}
+
 .navUl {
     width: 50%;
     display: flex;
@@ -172,12 +176,14 @@ textarea::placeholder {
 .what {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 6%;
+    padding-bottom: 4%;
+    font-size: 14px;
 }
 
 .what img {
     max-width: 27%;
-    margin: 0 25px;
+    margin: 0 22px;
+    
 }
 
 .about h2 {
