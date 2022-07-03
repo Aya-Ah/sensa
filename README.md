@@ -16,5 +16,4 @@
 
 Flask as lightweight Python web framework has been used for creating web application to make this model available anywhere and for everyone in user-friendly simple interface.
 
-![Screenshot (67)](https://user-images.githubusercontent.com/57809558/177052124-6fb2848c-27b1-4782-b542-bad5f848c561.png)
 
