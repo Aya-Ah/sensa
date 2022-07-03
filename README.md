@@ -11,7 +11,11 @@
   Finally, the performance of the proposed model is evaluated via experimentson public dataset that is List of documents with emotion flag, It is split into train, test & validation for building the machine learning model, It helps greatly in NLP Classification tasks . 
 Results shown in model accuracy graph and Confusion matrix shown below.
 
-![Screenshot (112)](https://user-images.githubusercontent.com/57809558/177053067-d61c9a42-fcd6-4a4f-aca4-05f03ed5e1ab.png)
+![Screenshot__112_-removebg-preview](https://user-images.githubusercontent.com/57809558/177053368-b604b731-bc3e-418f-83e1-3336e2c20e6c.png)
+
+  
+  
+  
   
   To make this model available anywhere and for everyone we build a simple web application using different web technologies such as: HTML, CSS, JavaScript, Python and Flask for both front and back ends.
 
